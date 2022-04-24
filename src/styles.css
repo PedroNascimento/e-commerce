@@ -38,7 +38,7 @@ nav {
 }
 
 .limitedOffer {
-  font-size: 20px;
+  font-size: 1.25rem;
   border-bottom: 2px solid green;
   cursor: pointer;
 }
@@ -57,7 +57,7 @@ nav {
 }
 
 .slider {
-  background: url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80');
+  background: url('https://unsplash.com/photos/WdoQio6HPVA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fGd5bXxlbnwwfDB8fHwxNjUwNzA3OTU5&force=true&w=1920');
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   overflow: hidden;
 }
@@ -91,7 +91,7 @@ nav {
   position: absolute;
   top: 10%;
   right: 10%;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 900;
   text-align: center;
   color: white;
@@ -102,7 +102,7 @@ nav {
   position: absolute;
   top: 10%;
   left: 10%;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
   text-align: center;
   color: white;
@@ -114,7 +114,7 @@ nav {
   position: absolute;
   top: 50%;
   right: 10%;
-  font-size: 30px;
+  font-size: 1.87rem;
   font-weight: 900;
   color: white;
   border: 1px solid gray;
@@ -180,7 +180,7 @@ nav {
 }
 
 .featureTitle {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   margin: 20px;
 }
@@ -216,12 +216,12 @@ nav {
 }
 
 .payTitle {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: lightgray;
 }
 
 label {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 300;
 }
 
@@ -295,22 +295,22 @@ label {
 }
 
 .productTitle {
-  font-size: 75px;
+  font-size: 4.69rem;
   font-weight: 900;
 }
 
 .productDesc {
-  font-style: 24px;
+  font-style: 1.5rem;
   color: gray;
 }
 
-.colors,
+.sabores,
 .sizes {
   display: flex;
   margin-bottom: 20px;
 }
 
-.color {
+.sabor {
   width: 32px;
   height: 32px;
   border-radius: 5px;
@@ -319,16 +319,8 @@ label {
   cursor: pointer;
 }
 
-.color:last-child {
-  background-color: darkblue;
-}
-
-.size {
-  padding: 5px 20px;
-  border: 1px solid black;
-  margin-right: 10px;
-  cursor: pointer;
-  font-size: 20px;
+.sabor:last-child {
+  background-color: blue;
 }
 
 .productButton {
@@ -380,7 +372,10 @@ label {
 }
 
 .nsTitle {
-  font-size: 40px;
+  font-size: 2rem;
+}
+.nsTitleSm {
+  font-size: 3rem;
 }
 
 .nsButton {
@@ -401,7 +396,7 @@ footer {
 }
 
 .fMenuTitle {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .fList {
@@ -445,7 +440,7 @@ footer {
 
 .copyright {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.87rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -464,7 +459,7 @@ footer {
   .menuItem {
     margin: 20px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .slider {
@@ -523,7 +518,7 @@ footer {
   }
 
   .productTitle {
-    font-size: 50px;
+    font-size: 3.12rem;
     margin: 0;
   }
 

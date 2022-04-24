@@ -4,76 +4,49 @@ const menuItems = document.querySelectorAll('.menuItem')
 const products = [
   {
     id: 1,
-    title: 'Air Force',
+    title: 'Whey Protein',
+    //desc: 'Top Whey 3W Mais Performance Refil (1800g) Max Titanium contém três tipos de proteínas do soro do leite: concetrada (WPC), isolada (WPI) e hidrolisada (WPH), matéiras-primas com alta concetração de aminoácidos, principalmente BCAA. Essas características dessa fórmula exclusiva da Max Titanium, torma um produto extraordinário que auxilia na formação dos músculos e na recuperação muscular pós-treino. A linha Mais Performance fornce de 31g a 32g de proteínas por porção, contendo altas quantidades de aminoácidos essenciais (BCAA) e também é fortificada com 11 vitaminas e 6 minerais. Além disso, o Top Whey 3W é o suplemento proteíco mais premiado do Brasil.',
     price: 219,
-    colors: [
+    sabores: [
       {
-        code: 'black',
-        img: './/src/assets/img/air.png'
+        code: 'chocolate',
+        img: './/src/assets/img/tw3w.png'
       },
       {
-        code: 'darkblue',
-        img: './src/assets/img/air2.png'
+        code: 'strawberry',
+        img: './src/assets/img/tw3w-morango.png'
       }
     ]
   },
   {
     id: 2,
-    title: 'Air Jordan',
-    price: 249,
-    colors: [
+    title: 'Pré-Treino',
+    price: '109,90',
+    desc: 'HÓRUS é um produto para ser consumido no pré treino. Para quem se exercita com intensidade, a fadiga é um dos principais fatores que influenciam o rendimento, por isso desenvolvemos o HÓRUS: com formulação altamente tecnológica e ingredientes de altíssima qualidade, para você ter um treino com muito mais eficiência.',
+    sabores: [
       {
-        code: 'lightgray',
-        img: './src/assets/img/jordan.png'
+        code: 'lemon',
+        img: './src/assets/img/pw-limao.png'
       },
       {
-        code: 'green',
-        img: './src/assets/img/jordan2.png'
+        code: 'ice',
+        img: './src/assets/img/pw-ice.png'
       }
     ]
   },
   {
     id: 3,
-    title: 'Blazer',
-    price: 209,
-    colors: [
+    title: 'Creatina',
+    desc: 'A Creatina é formada a partir da associação de três aminoácidos de alto valor biológico: arginina, glicina e metionina e está presente naturalmente em nosso organismo, onde cerca de 95% do conteúdo de creatina é armazenada no músculo esquelético.',
+    price: '94,90',
+    sabores: [
       {
-        code: 'lightgray',
-        img: './src/assets/img/blazer.png'
+        code: 'creatine',
+        img: './src/assets/img/creatina.png'
       },
       {
-        code: 'green',
-        img: './src/assets/img/blazer2.png'
-      }
-    ]
-  },
-  {
-    id: 4,
-    title: 'Crater',
-    price: 229,
-    colors: [
-      {
-        code: 'black',
-        img: './src/assets/img/crater.png'
-      },
-      {
-        code: 'lightgray',
-        img: './src/assets/img/crater2.png'
-      }
-    ]
-  },
-  {
-    id: 5,
-    title: 'Hippie',
-    price: 199,
-    colors: [
-      {
-        code: 'gray',
-        img: './src/assets/img/hippie.png'
-      },
-      {
-        code: 'black',
-        img: './src/assets/img/hippie2.png'
+        code: 'creatine-2',
+        img: './src/assets/img/creatine-2.png'
       }
     ]
   }
@@ -84,8 +57,8 @@ let choosenProduct = products[0]
 const currentProductImg = document.querySelector('.productImg')
 const currentProductTitle = document.querySelector('.productTitle')
 const currentProductPrice = document.querySelector('.productPrice')
-const currentProductColors = document.querySelectorAll('.color')
-const currentProductSizes = document.querySelectorAll('.size')
+const currentProductDesc = document.querySelector('.productDesc')
+const currentProductFlavor = document.querySelectorAll('.sabor')
 
 menuItems.forEach((item, index) => {
   item.addEventListener('click', () => {
@@ -97,30 +70,20 @@ menuItems.forEach((item, index) => {
 
     //altera os textos dos produtos atuais
     currentProductTitle.textContent = choosenProduct.title
-    currentProductPrice.textContent = '$' + choosenProduct.price
+    currentProductPrice.textContent = 'R$ ' + choosenProduct.price
+    currentProductDesc.textContent = choosenProduct.desc
     currentProductImg.src = choosenProduct.colors[0].img
 
-    //altera a cor do produto
-    currentProductColors.forEach((color, index) => {
-      color.style.backgroundColor = choosenProduct.colors[index].code
+    //altera o sabor do produto
+    currentProductFlavor.forEach((sabor, index) => {
+      sabor.style.backgroundColor = choosenProduct.sabores[index].code
     })
   })
 })
 
-currentProductColors.forEach((color, index) => {
-  color.addEventListener('click', () => {
-    currentProductImg.src = choosenProduct.colors[index].img
-  })
-})
-
-currentProductSizes.forEach((size, index) => {
-  size.addEventListener('click', () => {
-    currentProductSizes.forEach(size => {
-      size.style.backgroundColor = 'white'
-      size.style.color = 'black'
-    })
-    size.style.backgroundColor = 'black'
-    size.style.color = 'white'
+currentProductFlavor.forEach((sabor, index) => {
+  sabor.addEventListener('click', () => {
+    currentProductImg.src = choosenProduct.sabores[index].img
   })
 })
 
