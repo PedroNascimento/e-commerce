@@ -10,4 +10,7 @@ Os arquivos deverão ser compactados e anexados na atividade.
 ## Implementação
 
 Como resultado da atividade, foi desenvolvido um site para vendas de Suplementos. As tecnologias utilizadas foram as propostas na atividade (HTML, CSS, Javascript).
+No site tem o link solicitado (SOBRE) que direciona para o site do meu portfolio. Lá conterá o link para o projeto da Calculadora.
+
+[Veja o resultado do site aqui!](https://pedronascimento.github.io/e-commerce/)
 
