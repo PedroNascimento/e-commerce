@@ -37,10 +37,11 @@ nav {
   color: lightgray;
 }
 
-.limitedOffer {
+.about {
   font-size: 1.25rem;
-  border-bottom: 2px solid green;
   cursor: pointer;
+  color: lightgray;
+  text-decoration: none;
 }
 
 .navBottom {
@@ -50,6 +51,12 @@ nav {
 }
 
 .menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+}
+.menuItem a {
   margin-right: 50px;
   cursor: pointer;
   color: lightgray;
@@ -457,6 +464,11 @@ footer {
   }
 
   .menuItem {
+    margin: 20px;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .menuItem a {
     margin: 20px;
     font-weight: 700;
     font-size: 1.25rem;
